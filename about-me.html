@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/about-me.css">
@@ -17,19 +17,20 @@
 <body>
 
     <header>
-        <nav>
+        <h1><a href="about-me.html">William Lin</a></h1>
+        <nav class="site-navigation">
             <ul>
-                <li>about</li>
-                <li>projects</li>
-                <li>contact</li>
+                <li><a href="#about-me">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
     </header>   
    
     <main>
         
-        <section>
-            <h1>William Lin</h1>
+        <section class="skills">
+            <img src="images/flowers-7976768_1280.png" alt="wallpaper photo of tropical plants art">
             <p>front-end web developer</p>
             <ul>
                 <li>html</li>
@@ -40,16 +41,16 @@
             </ul>
         </section>
 
-    <section>
+    <section class="about-me" id="about-me">
 
-        <h2>about me</h2>
-        <p>Hello, I'm William, an aspiring front-end web developer currently studying at BCIT.</p>
+        <h2>Hello, I am William</h2>
+        <p>I am an aspiring front-end web developer currently studying at BCIT.</p>
         <p></p>
         <p></p>
         
     </section>
 
-    <section>
+    <section id="projects">
         <h2>Projects</h2>
             <ul>
                 <li>
@@ -92,7 +93,7 @@
             </ul>
     </section>
 
-    <section>
+    <section id="contact">
         <h2>Contact</h2>
         <ul>
             <li>email</li>

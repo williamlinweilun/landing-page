@@ -1,26 +1,36 @@
 body {
-    font-family: "Inter";
+    font-family: "Inter Tight";
     background-color: black;
     color: white;
-    font-weight: 100;
-    font-style: thin;
+    font-weight: 200;
     font-size: 1rem;
     
 }
 
 h1 {
-    font-family: "DM Serif Text";
+    font-family: "Bebas Neue";
     color: white;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 400;    
+    line-height: 2rem;
 }
 
 h2 {
-    font-family: "DM Serif Text";
+    font-family: "Bebas Neue"; 
     color: white;
     font-size: 1.5rem;
     font-weight: 400;
+    line-height: 2rem;
 }
+
+.skills p {
+    font-family: "Bebas Neue";
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.skills {}
 
 /* Elements
 --------------------------------------------- */
@@ -29,16 +39,76 @@ h2 {
 /* Links
 --------------------------------------------- */
 
-/* # Components
-	- Header */ 
-
- {
+a,
+a:visited {
+    color:white;
     text-decoration: none;
 }
 
+a:hover {
+    color: #dfab7d;
+}
+
+a:focus {
+
+}
+
+a:active {
+
+}
 
 
+/* # Components
+	- Header */ 
 
+h1 {
+    display: flex;
+    justify-content: center;
 
-	- Main
-	- Footer */
+}
+
+.site-navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 0 1rem .8rem;
+    border-bottom: .0625rem solid white;
+    margin: 1rem 2rem;
+}
+
+.skills img {
+    
+  
+}
+
+/* Main
+--------------------------------------------- */
+.skills img {
+    opacity: 75%;
+}
+
+.skills p {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.skills li {
+    list-style: none;
+    border: .0625rem solid white;
+    margin: .5rem;
+    display: inline-block;
+    border-radius: .8rem;
+    padding: .5rem;
+    line-height: 1.5rem;
+}
+
+.about-me h2 {
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-start;
+}
