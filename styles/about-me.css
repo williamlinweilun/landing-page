@@ -1,5 +1,5 @@
 body {
-    font-family: "Inter Tight";
+    font-family: "Inter Tight", Arial, Helvetica, sans-serif;
     background-color: black;
     color: white;
     font-weight: 200;
@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
     color: white;
     font-size: 4rem;
     font-weight: 400;    
@@ -16,18 +16,23 @@ h1 {
 }
 
 h2 {
-    font-family: "Bebas Neue"; 
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif; 
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 2rem;
 }
 
+h3 {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
 .skills p {
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
     font-size: 2rem;
     text-align: center;
-
 }
 
 .skills {}
@@ -110,5 +115,53 @@ h1 {
 .about-me h2 {
     font-size: 3rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+}
+
+.projects h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me p {
+    margin-bottom: 5rem;
+}
+
+
+.projects li {
+    list-style: none;
+
+}
+
+.project img {
+    margin-top: ;
+}
+
+
+.project-link h3 {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 2rem 0;
+}
+
+.contact h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.contact ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 0 1rem .8rem;
+    border-bottom: .0625rem solid white; 
+    margin: 1rem 2rem; 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
 }
