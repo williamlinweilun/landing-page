@@ -1,9 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Inter Tight", Arial, Helvetica, sans-serif;
     background-color: black;
     color: white;
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 1.25rem;
     
 }
 
@@ -18,7 +22,7 @@ h1 {
 h2 {
     font-family: "Bebas Neue", Arial, Helvetica, sans-serif; 
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
     line-height: 2rem;
 }
@@ -40,6 +44,25 @@ h3 {
 /* Elements
 --------------------------------------------- */
 
+.about-me img {
+    width: 30rem;
+    height: 40rem;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.project img {
+    width: 20rem;
+    height: 12rem; 
+    object-fit: cover;
+}
+
+.contact img {
+    width: 3rem;
+    height: 3rem;
+}
+
 
 /* Links
 --------------------------------------------- */
@@ -55,7 +78,7 @@ a:hover {
 }
 
 a:focus {
-
+    color: #dfab7d;
 }
 
 a:active {
@@ -64,64 +87,56 @@ a:active {
 
 
 /* # Components
-	- Header */ 
-
+	- Header */
+    
 h1 {
     display: flex;
     justify-content: center;
-
 }
 
 .site-navigation ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    position: relative;
     padding: 0 1rem .8rem;
     border-bottom: .0625rem solid white;
     margin: 1rem 2rem;
 }
 
-.skills img {
-    
-  
-}
 
 /* Main
 --------------------------------------------- */
-.skills img {
-    opacity: 75%;
-}
 
-.skills p {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.skills li {
-    list-style: none;
-    border: .0625rem solid white;
-    margin: .5rem;
-    display: inline-block;
-    border-radius: .8rem;
-    padding: .5rem;
-    line-height: 1.5rem;
-}
 
 .about-me h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
+}
+
+.about-me p {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .projects h2 {
     display: flex;
     justify-content: center;
 }
+
+.project {
+    max-width: 20rem;
+    margin: 2rem 2rem;
+    box-shadow: 0px 0px 9px 2px #1f70b6;
+}
+
 
 .about-me p {
     margin-bottom: 5rem;
@@ -134,7 +149,7 @@ h1 {
 }
 
 .project img {
-    margin-top: ;
+    max-width: 100%;
 }
 
 
@@ -154,11 +169,27 @@ h1 {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    position: relative;
     padding: 0 1rem .8rem;
     border-bottom: .0625rem solid white; 
     margin: 1rem 2rem; 
 }
+
+.contact a {
+    filter: invert(1);
+}
+
+@media (min-width: 50em) {
+    
+    .projects-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+}
+
+/* Footer */
 
 footer {
     display: flex;
